@@ -48,19 +48,9 @@ body {
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 576px) {
-
-    .main-info,
-    .contact_info_container {
-        flex-direction: column;
-    }
-
-    .contact_info_container {
-        align-items: center;
-    }
-
-    .contact-info__block:not(:last-child) {
-        margin-bottom: 20px;
+@media screen and (max-width: 637px) {
+    .contact_info_container .contact-info__block {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .experiences {
@@ -275,6 +265,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .timeline__years-item {
