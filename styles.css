@@ -196,10 +196,7 @@ body {
     margin-bottom: 20px;
 }
 
-.experiences__company-project {
-    margin-left: 15px;
-    margin-bottom: 25px;
-}
+
 
 .experiences__company-project-role {
     color: var(--durability-text-color);
@@ -215,8 +212,16 @@ body {
 }
 
 .experiences__company-project-responsibilities {
-    color: var(--secondary-text-color);
     padding-left: 20px;
+}
+
+.experiences__company-project-responsibilities__item-link {
+    text-decoration: none;
+    color: var(--secondary-text-color)
+}
+
+.experiences__company-project-responsibilities__item-link:hover {
+    color: var(--text-decoration-color)
 }
 
 .additional-info {
