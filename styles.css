@@ -159,7 +159,7 @@ body {
     text-align: justify;
 }
 
-.skills__header {
+.skills__header, .timeline__header {
     color: var(--secondary-text-color);
     text-align: center;
     margin-bottom: 15px;
@@ -267,4 +267,43 @@ body {
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.timeline__years {
+    color: var(--primary-text-color);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.timeline__years-item {
+    font-size: 16px;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+
+.timeline__years-item--active {
+    background: var(--text-decoration-color);
+    border-radius: 10px;
+    color: #fff;
+    animation: timeline-item-active 0.5s ease;
+}
+
+@keyframes timeline-item-active {
+    0% {
+        color: var(--primary-text-color);
+        background: #fff;
+    }
+    100% {
+        color: #fff;
+        background: var(--text-decoration-color);
+    }
+}
+
+.timeline__info {
+    min-height: 100px;
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-top: 20px;
 }
